@@ -12,7 +12,7 @@ In this project, the goal is to train two reinforcement learning agents to play 
 </p>
 
 ### Task
-The goal of this project is to train to agents playing together and keeping the ball in play as long as possible. Each time the agent hits the ball over the net, a reward of +0.1 is returned. In case the ball hits the ground or the ball is out of bounds, a score of -0.01 is returned. The final score per episode is calculated by summing up the scores for each agent in all steps and taking the score sum of the agent with the highest score. The environment is considered to be solved once the average score over 100 episodes is larger than +0.5.
+The goal of this project is to train two agents playing together and keeping the ball in play as long as possible. Each time an agent hits the ball over the net, a reward of +0.1 is returned to the agent. In case the ball hits the ground or the ball is out of bounds, a score of -0.01 is returned. The final score per episode is calculated by summing up the scores for each agent in all steps and taking the score sum of the agent with the highest score. The environment is considered to be solved once the average score over 100 episodes is larger than +0.5.
 
 
 ## Setup
@@ -42,4 +42,4 @@ To execute the environment on your machine, you need to download the environment
 
 ## Execution
 
-Open the `Tennis.ipynb` notebook and execute the cells in sequential order to load and explore the environment and to train the agent. The reinforcement learning agent is implemented in the .py files of this repository and is loaded in on of the first cells of the notebook. All hyperparameters are initialized in the agent implementation, but the training time can be varied by modifying the `n_epsiodes` parameter while calling the training function.
+Open the `Tennis.ipynb` notebook and execute the cells in sequential order to load and explore the environment and to train the agent. The reinforcement learning agent is implemented in the .py files of this repository and is loaded in on of the first cells of the notebook. All hyperparameters are initialized in the agent implementation, but the training time can be varied inside the notebook by modifying the `n_epsiodes` parameter while calling the training function.
